@@ -6,11 +6,7 @@ interface CountryCardProps {
   isSelected: boolean;
 }
 
-const CountryCard: React.FC<CountryCardProps> = ({
-  country,
-  onClick,
-  isSelected,
-}) => {
+const CountryCard = ({ country, onClick, isSelected }: CountryCardProps) => {
   return (
     <li
       className={`border px-4 py-2 shadow-md bg-slate-500/35 hover:bg-slate-500 transition-colors ${

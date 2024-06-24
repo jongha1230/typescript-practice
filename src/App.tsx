@@ -1,10 +1,11 @@
 import "./App.css";
+import CountryList from "./components/CountryList";
 
 function App() {
   return (
-    <>
-      <div>헬로 월드</div>
-    </>
+    <div className="flex flex-col items-center justify-center">
+      <CountryList />
+    </div>
   );
 }
 

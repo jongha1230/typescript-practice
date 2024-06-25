@@ -3,15 +3,13 @@ import { Country } from "../types/Country";
 interface CountryCardProps {
   country: Country;
   onClick: () => void;
-  isSelected: boolean;
 }
 
-const CountryCard = ({ country, onClick, isSelected }: CountryCardProps) => {
+const CountryCard = ({ country, onClick }: CountryCardProps) => {
   return (
     <li
-      className={`border px-4 py-2 shadow-md bg-slate-500/35 hover:bg-slate-500 transition-colors ${
-        isSelected ? "border-4 border-green-500" : ""
-      }`}
+      className={`border px-4 py-2 shadow-md bor bg-slate-500/35 hover:bg-slate-500 transition-colors 
+        ${country.isSelected ? "border-4 border-green-500" : ""}`}
       onClick={onClick}
     >
       <img

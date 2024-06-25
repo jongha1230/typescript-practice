@@ -7,4 +7,5 @@ export interface Country {
     common: string;
   };
   capital: string[];
+  isSelected: boolean;
 }

@@ -1,4 +1,4 @@
-export interface Country {
+export type Country = {
   cca2: string;
   flags: {
     png: string;
@@ -7,5 +7,4 @@ export interface Country {
     common: string;
   };
   capital: string[];
-  isSelected: boolean;
-}
+};
